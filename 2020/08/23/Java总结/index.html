@@ -16,7 +16,7 @@
 <meta property="og:description" content="1.为什么使用 for 循环循环次数固定，for 比 while 更简洁  2.for 循环结构：for（初始化表达式；判断条件；表达式）{循环体；}执行流程 1.执行初始化表达式 2.判断条件：true 执行循环体&#x3D;&gt;执行表达式&#x3D;&gt;从新执行false 种植循环 \  3.while 和 for 的区别while 执行无限次数循环for 执行有限次数循环">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-23T08:03:03.000Z">
-<meta property="article:modified_time" content="2020-08-23T08:16:37.440Z">
+<meta property="article:modified_time" content="2020-08-25T01:18:06.274Z">
 <meta property="article:author" content="刘嘉隆">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="for循环">
@@ -70,7 +70,7 @@
 			每日更新一篇
 		</nav>
 		<nav>
-			总文章数 3
+			总文章数 4
 		</nav>
 		<nav class="header-smart-menu">
 			
@@ -187,7 +187,7 @@
         <span class="post-meta-item-icon">
             <i class="fa fa-keyboard-o"></i>
             <span class="post-meta-item-text"> 字数统计: </span>
-            <span class="post-count">476字</span>
+            <span class="post-count">670字</span>
         </span>
     </span>
 
@@ -196,7 +196,7 @@
         <span class="post-meta-item-icon">
             <i class="fa fa-hourglass-half"></i>
             <span class="post-meta-item-text"> 阅读时长: </span>
-            <span class="post-count">1分</span>
+            <span class="post-count">2分</span>
         </span>
     </span>
 </div>
@@ -225,7 +225,15 @@
 <ul>
 <li>4.for 循环常见问题 1<br>int i=0；<br>for（；i&lt;10;i++）{System.out.println(“这是”+i);}<br>编译错误：变量 i 没有变化<br>for 循环常见问题 2<br>for（int i=0；；i++）{System.out.println(“这是”+i);}<br>缺少循环条件，死循环<br>for 循环常见问题 3<br>for（;;）{System.out.println(“这是测试”);}<br>循环中缺少必要的循环控制，会导致死循环 5.什么是多重循环<br>一个循环体内又包含另一个完整的循环结构<br>while(循环条件 1){<br>//循环操作<br>while(循环条件 2){<br>//循环操作 2<br>}<br>}<br>for(循环条件 1){<br>//循环操作<br>for(循环条件 2){<br>//循环操作 2<br>}<br>}<br>do{<br>//循环操作<br>do{<br>//循环操作 2<br>}while(循环条件 1)<br>}while(循环条件 2)<br>while(循环条件 1){<br>//循环操作 1<br>for(循环条件 2){<br>//循环操作<br>}<br>}<br>for 循环外圈循环一次,内部循环一圈<br>多重循环的使用<br>注意<br>各循环可相互嵌套<br>一般不超过三层<br>外循环变量变化一次,内层循环变量变化一遍</li>
 </ul>
-<p>—3.break 语句语法<br>改变程序控制流<br>用于 do-while while for 循环中,可跳出循环而执行循环后面的语句<br>break 通常在循环中于条件语句一起使用<br>什么是 continue 语句<br>continue:只能用在循环里<br>continue 作用:跳过循环体中剩余的语句而执行下一次循环<br>通常与条件语句一起使用,加速循环</p>
+<hr>
+<ul>
+<li><p>break 语句语法<br>改变程序控制流<br>用于 do-while while for 循环中,可跳出循环而执行循环后面的语句<br>break 通常在循环中于条件语句一起使用<br>什么是 continue 语句<br>continue:只能用在循环里<br>continue 作用:跳过循环体中剩余的语句而执行下一次循环<br>通常与条件语句一起使用,加速循环</p>
+</li>
+<li><p>对比 break 和 continue<br>使用场合<br>break 常用于 switch 结构和循环结构中<br>continue 跳出本次循环,进入下一次循环<br>双重循环亦如此<br>作用(循环结构中)<br>break 语句终止某个循环,程序跳转到循环块外的下一条语句<br>continue 跳出本次循环,进入下一次循环<br>双重循环亦如此</p>
+</li>
+<li><p>程序调试<br>通过代码阅读或者加输出语句查找程序错误<br>当程序结构越来越复杂时,需要专门的技术来发现和定位错误,就是”程序调试”<br>断点:程序暂停执行的代码行<br>F5:进入当前运行的程序内部<br>F6:当前程序的下一行<br>F7:跳出函数<br>F8:运行完当前断点</p>
+</li>
+</ul>
 
     
     
