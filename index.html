@@ -63,7 +63,7 @@
 			每日更新一篇
 		</nav>
 		<nav>
-			总文章数 7
+			总文章数 8
 		</nav>
 		<nav class="header-smart-menu">
 			
@@ -157,6 +157,112 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-Promise原生" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
+  
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/29/Promise%E5%8E%9F%E7%94%9F/">原生Js实现Promise</a>
+    </h1>
+  
+
+  
+  <a href="/2020/08/29/Promise%E5%8E%9F%E7%94%9F/" class="archive-article-date">
+	<time datetime="2020-08-29T00:47:21.000Z" itemprop="datePublished"><i
+			class="icon-calendar icon"></i>2020-08-29</time>
+</a>
+  <!-- 需要添加的位置 -->
+  <!-- 开始添加字数统计-->
+  
+  <div style="margin-top:10px;">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="fa fa-keyboard-o"></i>
+            <span class="post-meta-item-text"> 字数统计: </span>
+            <span class="post-count">2.1k字</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="fa fa-hourglass-half"></i>
+            <span class="post-meta-item-text"> 阅读时长: </span>
+            <span class="post-count">9分</span>
+        </span>
+    </span>
+</div>
+  
+  <!-- 添加完成 -->
+  
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="手写-Promise-的过程"><a href="#手写-Promise-的过程" class="headerlink" title="手写 Promise 的过程"></a>手写 Promise 的过程</h1><h3 id="1-先创建一个闭包-立即执行函数-executor"><a href="#1-先创建一个闭包-立即执行函数-executor" class="headerlink" title="1.先创建一个闭包,立即执行函数 executor"></a>1.先创建一个闭包,立即执行函数 executor</h3><h3 id="2-定义构造函数-Promise-和执行器函数-executor-并进行初始化-Promise-数据"><a href="#2-定义构造函数-Promise-和执行器函数-executor-并进行初始化-Promise-数据" class="headerlink" title="2.定义构造函数 Promise 和执行器函数 executor 并进行初始化 Promise 数据"></a>2.定义构造函数 Promise 和执行器函数 executor 并进行初始化 Promise 数据</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const PENDING &#x3D; &quot;pending&quot;;</span><br><span class="line">const RESOLVED &#x3D; &quot;resolved&quot;;</span><br><span class="line">const REJECTED &#x3D; &quot;rejected&quot;;</span><br><span class="line">that.status &#x3D; PENDING; &#x2F;&#x2F;给promise对象指定status属性,初始值为pending</span><br><span class="line">that.data &#x3D; undefined; &#x2F;&#x2F;给promise对象指定一个用于存储结果数据的属性</span><br><span class="line">that.callbacks &#x3D; []; &#x2F;&#x2F;每个元素的结构:&#123;onResolved()&#123;&#125;,onRejected()&#123;&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-定义构造函数内的-resolve-方法和-reject-方法-参数分别为-value-和-reason"><a href="#3-定义构造函数内的-resolve-方法和-reject-方法-参数分别为-value-和-reason" class="headerlink" title="3.定义构造函数内的 resolve 方法和 reject 方法 参数分别为 value 和 reason"></a>3.定义构造函数内的 resolve 方法和 reject 方法 参数分别为 value 和 reason</h3><p>在调用 resolve 和 reject 时修改 Promise 的 status 属性 分别为 resolved 和 rejected 然后将传入的数据保存,如果队列里有待执行的回调,分别异步执行回调 onResolved 和 onRejected</p>
+    
+    <a class="article-more-a" href="/2020/08/29/Promise%E5%8E%9F%E7%94%9F/#more">more >></a>
+    
+    
+    
+    
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Promise</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/08/29/Promise%E5%8E%9F%E7%94%9F/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
   
     <article id="post-http协议" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1071,6 +1177,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">知识整理</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Promise</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
              
               <li class="article-tag-list-item">
